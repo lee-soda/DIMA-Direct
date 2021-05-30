@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.grid-container {
+    background-color: white;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+	word-break: keep-all;
+    display: grid;
+	grid-template-columns: 122px 122px 122px;
+	grid-template-rows: 122px 122px 122px;
+}
+
+.menu-button {
+	border-radius: 10%;
+	box-shadow: 3px 3px 3px #D2D2D2;
+	margin: 5px;
+    text-align: center;
+    border: 2px solid #ffffffff;
+}
+.menu-button:hover {
+	border: 2px solid #ED1C91;
+  background: #E6E6E6;
+  }
+.menu-button > a {
+	color: black;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+.menu-button > a > img {
+	height: 55px;
+	margin-top: 13px;
+	width: 55px;
+}
+.menu-button > a > p {
+    font-family: 'Nanum Gothic';
+	font-size: 13px;
+	margin: 5px;
+  line-height: 30px;
+}
+
+.sug-button {
+	border-radius: 10%;
+	box-shadow: 3px 3px 3px #D2D2D2;
+	margin: 5px;
+    text-align: center;
+    border: 2px solid #ffffffff;
+}
+.sug-button:hover {
+	border: 2px solid #FFF139;
+  background: #E6E6E6;
+  }
+.sug-button > a {
+	color: black;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+.sug-button > a > img {
+	height: 55px;
+	margin-top: 13px;
+	width: 55px;
+}
+.sug-button > a > p {
+    font-family: 'Nanum Gothic';
+	font-size: 13px;
+	margin: 5px;
+  line-height: 30px;
+}
+
+
+
+.footer {
+	color: gray;
+    font-family: 'Nanum Gothic';
+	font-size: 10px;
+	font-weight: bolder;
+	grid-column: span 3;
+	padding: 1px;
+	text-align: center;
+  line-height: 15px;
+}
+.footer > div > a {
+	color: #ED1C91;
+	text-decoration: none;
+  line-height: 30px;
+}
