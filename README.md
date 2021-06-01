@@ -4,8 +4,9 @@
 [다운로드]
 
 웨일브라우저 : https://store.whale.naver.com/detail/ldjgcbmhhakdhagofhgajdkdkmaefama
+크롬 : https://chrome.google.com/webstore/detail/%EB%94%94%EB%A7%88-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8/fkdciphpgjikhlmndbafofbgcdjedckk
 
-곧 **크롬 브라우저**도 확장앱 스토어에 업로드 할 예정입니다.
+곧 **마이크로소프트 엣지 브라우저**도 확장앱 스토어에 업로드 할 예정입니다.
 
 -------------------------------------------------
 ## 💡 주요 기능
