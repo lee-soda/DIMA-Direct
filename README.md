@@ -1,10 +1,10 @@
 # 💡 디마 다이렉트 (DIMA Direct)
 **동아방송예술대학교 학생들**이 자주 이용하는 웹사이트를 모아놓은 확장앱 입니다.
 
-[다운로드]
+**[다운로드]**
 
-* 웨일브라우저 : https://store.whale.naver.com/detail/ldjgcbmhhakdhagofhgajdkdkmaefama
-* 크롬 : https://chrome.google.com/webstore/detail/%EB%94%94%EB%A7%88-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8/fkdciphpgjikhlmndbafofbgcdjedckk
+* **웨일브라우저** : https://store.whale.naver.com/detail/ldjgcbmhhakdhagofhgajdkdkmaefama
+* **크롬** : https://chrome.google.com/webstore/detail/%EB%94%94%EB%A7%88-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8/fkdciphpgjikhlmndbafofbgcdjedckk
 
 곧 **마이크로소프트 엣지 브라우저**도 확장앱 스토어에 업로드 할 예정입니다.
 
