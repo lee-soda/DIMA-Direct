@@ -35,3 +35,6 @@
 ## 💡 저작권 관련
 
 본 확장앱에 사용된 로고 이미지의 저작권은 동아방송예술대학교에 있습니다.
+
+Origin Repo: GENYF/Ajou-Swift(https://github.com/GENYF/Ajou-Swift)
+Origin: 아주대학교 크롬·웨일 확장프로그램(https://ajou-swift.xyz)
