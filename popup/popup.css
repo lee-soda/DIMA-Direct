@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+	background-color: white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	width: 400px;
+	height: 480px;
+	word-break: keep-all;
+}
+.main-container {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 70px 100px 100px 100px 80px 30px;
+}
+.header {
+	grid-column: span 4;
+}
+.header-sub-container {
+	display: grid;
+	grid-template-columns: 330px 70px;
+	grid-template-rows: 70px;
+	height: 100%;
+	width: 100%;
+}
+.buttonBox {
+	font-size: 0;
+	grid-column: span 1;
+	padding-bottom: 23px;
+	padding-top: 18px;
+	text-align: right;
+}
+.settingsButton {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	object-fit: contain;
+	padding-left: 6px;
+	padding-right: 20px;
+}
+.settingsButton > img {
+	height: 100%;
+	width: 100%;
+}
+.developmentButton {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	object-fit: contain;
+	padding-left: 6px;
+	padding-right: 5px;
+}
+.developmentButton > img {
+	height: 50%;
+	width: 50%;
+}
+.header > div > button:hover {
+	background-color: inherit;
+	border-left: 1px solid #D51982;
+	color: #000000;
+}
+.item-link {
+	border-radius: 10%;
+	box-shadow: 0px 3px 6px #D51982;
+	cursor: pointer;
+	margin: 5px;
+	text-align: center;
+}
+.item-link:hover {
+	border: 2px solid #D51982;
+}
+.item-link > img {
+	height: 50px;
+	width: 50px;
+	margin-top: 10px;
+}
+.item-link > p {
+	font-family: inherit;
+	font-size: 12px;
+	margin: 5px;
+}
+.item-schedule {
+	border: 1px solid #D51982;
+	border-radius: 5px 5px 5px 5px;
+	font-family: inherit;
+	font-size: 12px;
+	grid-column: span 4;
+	margin-bottom: 8px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 9px;
+	text-align: center;
+}
+.item-sub-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 100%;
+	width: 100%;
+}
+.item-date {
+	border-right: 1px dashed #D51982;
+	grid-column: span 1;
+}
+.item-date > p {
+	margin-bottom: 15px;
+	margin-top: 14px;
+}
+.item-content {
+	border-left: 1px dashed #D51982;
+	grid-column: span 3;
+	vertical-align: middle;
+}
+.item-content > p {
+	margin-bottom: 15px;
+	margin-top: 14px;
+}
+.footer {
+	color: gray;
+	font-family: inherit;
+	font-size: 10px;
+	font-weight: 100;
+	grid-column: span 4;
+	padding: 1px;
+	text-align: center;
+}
+.footer > div > a {
+	color: gray;
+	margin-bottom: 15px;
+	text-decoration: none !important;
+}
