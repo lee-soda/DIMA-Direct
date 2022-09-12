@@ -57,3 +57,7 @@
 
 Origin Repo: GENYF/Ajou-Swift(https://github.com/GENYF/Ajou-Swift)
 Origin: 아주대학교 크롬·웨일 확장프로그램(https://ajou-swift.xyz)
+본 확장앱은 Ajou-Swift를 기반으로 제작되었습니다.
+
+Font : 티머니 둥근바람 Regular (https://www.tmoney.co.kr/aeb/cmnctn/ci/ci.dev)
+본 확장앱에 사용된 폰트는 (주)티머니에서 배포된 "티머니 둥근바람체"이며, 해당 폰트의 서체규정 및 라이선스를 준수하여 제작하였습니다.
