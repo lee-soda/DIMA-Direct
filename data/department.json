@@ -2,49 +2,64 @@
     "나의 학과" : {
         "URL" : "../options/options.html"
     },
-    "방송기술계열" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=120"
+    "방송기술과" : {
+        "URL" : "https://dima.ac.kr/?p=47"
     },
     "음향제작과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=15"
+        "URL" : "https://dima.ac.kr/?p=48"
     },
     "뉴미디어콘텐츠과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=26"
+        "URL" : "https://dima.ac.kr/?p=49"
     },
     "영상제작과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=13"
+        "URL" : "https://dima.ac.kr/?p=51"
     },
-    "방송보도제작과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=510"
+    "방송콘텐츠제작과" : {
+        "URL" : "https://dima.ac.kr/?p=52"
     },
     "방송극작과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=37"
+        "URL" : "https://dima.ac.kr/?p=53"
     },
-    "광고제작과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=54"
+    "광고크리에이티브과" : {
+        "URL" : "https://dima.ac.kr/?p=54"
     },
     "디지털영상디자인과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=45"
+        "URL" : "https://dima.ac.kr/?p=55"
     },
-    "공연예술계열" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=320"
+    "연극과" : {
+        "URL" : "https://dima.ac.kr/?p=57"
+    },
+	"뮤지컬과" : {
+        "URL" : "https://dima.ac.kr/?p=57"
     },
     "영화예술과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=34"
+        "URL" : "https://dima.ac.kr/?p=58"
     },
     "무대미술과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=46"
+        "URL" : "https://dima.ac.kr/?p=59"
     },
-    "실용음악학부" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=380"
+    "기악과" : {
+        "URL" : "https://dima.ac.kr/?p=61"
+    },
+    "성악(보컬)과" : {
+        "URL" : "https://dima.ac.kr/?p=62"
+    },
+    "작곡과" : {
+        "URL" : "https://dima.ac.kr/?p=63"
+    },
+    "K-POP과" : {
+        "URL" : "https://dima.ac.kr/?p=65"
+    },
+    "방송영화연기과" : {
+        "URL" : "https://dima.ac.kr/?p=66"
     },
     "패션스타일리스트과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=43"
+        "URL" : "https://dima.ac.kr/?p=67"
     },
     "엔터테인먼트경영과" : {
-        "URL" : "http://mm.dima.ac.kr/dimaMajorMain.aspx?major=56"
+        "URL" : "https://dima.ac.kr/?p=68"
     },
     "전공심화" : {
-        "URL" : "http://junkong.dima.ac.kr/default.asp"
+        "URL" : "https://dima.ac.kr/?p=69"
     }
 }
