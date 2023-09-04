@@ -3,13 +3,13 @@
 body {
 	background-color: white;
 	font-family: 'Noto Sans KR', sans-serif;
-	font-weight: 300;
+	font-weight: 250;
 	word-break: keep-all;
 }
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100px 1fr 1fr 1fr;
+	grid-auto-rows: 0.5fr 1fr 1fr 1fr;
 }
 .button-color {
 	grid-column: span 1;

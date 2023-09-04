@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function(){
             let main = document.getElementById('main');
 
             main.style.backgroundColor = "#35363A";
-            main.style.filter = "invert(100%) contrast(100%) saturate(120%) brightness(120%)";
+            main.style.filter = "invert(0%) contrast(100%) saturate(100%) brightness(100%)";
         }
     });
 
@@ -46,42 +46,33 @@ window.addEventListener('DOMContentLoaded', function(){
 
     //json에서 DIAM Direct로 학사일정 불러오기
     fetch(chrome.runtime.getURL("../data/schedule.json"))
-    .then((response) => response.json())
-    .then(function (jsonData) {
-        let scheduleText = jsonData[`${dayText}`];
+      .then((response) => response.json())
+      .then(function (jsonData) {
+          let scheduleText = "";
+          Object.entries(jsonData).forEach(([key, value]) => {
+              let dateRange = key.split(" ~ ");
+              let startDateString = dateRange[0];
+              let endDateString = dateRange.length > 1 ? dateRange[1] : startDateString;
+              let eventTitle = value;
 
-        if(scheduleText == undefined){
-            schedule.textContent = "학사일정이 없습니다.";
-        }
-        else{
-            schedule.textContent = scheduleText;
-        }
-    });
+              if (dayText >= startDateString && dayText <= endDateString) {
+                  scheduleText += eventTitle + "\n";
+              }
+          });
 
-    //학사일정 페이지 바로가기 추가
-    let itemSchedule = document.getElementById('item-schedule');
+          if(scheduleText === ""){
+              schedule.textContent = "오늘의 학사일정이 없습니다.";
+          }
+          else{
+              schedule.textContent = scheduleText;
+          }
+      });
 
-    clickOpenNewTeb(itemSchedule, "http://www.dima.ac.kr/sub_04/sub_04_01.aspx");
+      //학사일정 페이지 바로가기 추가
+      let itemSchedule = document.getElementById('item-schedule');
 
-    /*엔터 및 버튼 검색 기능*/
+      clickOpenNewTeb(itemSchedule, "https://dima.ac.kr/?p=78");
 
-    //엔터 검색
-    let input = document.getElementById('searchInput');
-
-    input.addEventListener('keypress', function(event) {
-        if (event.keyCode == 13) {
-            let query = document.getElementById('searchInput').value;
-            search(query);
-        }
-    });
-
-    //버튼 검색
-    let button = document.getElementById('searchButton');
-
-    button.addEventListener('click', function(){
-        let query = document.getElementById('searchInput').value;
-        search(query);
-    });
 
     /*마우스 우클릭 및 드래그 방지 기능*/
 
@@ -92,10 +83,8 @@ window.addEventListener('DOMContentLoaded', function(){
         event.preventDefault();
     });
 
-    //우클릭 방지
-    main.addEventListener('contextmenu', function(event){
-        event.preventDefault();
-    });
+
+
 });
 
 /*바로가기 생성 및 변경 데이터 파싱 함수*/
@@ -156,7 +145,3 @@ function clickOpenNewTeb(element, URL){
 }
 
 /*검색 함수*/
-function search(query){
-    let queryLink = "https://www.ajou.ac.kr/kr/search.do?qt=" + query;
-    window.open(queryLink);
-}
