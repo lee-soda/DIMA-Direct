@@ -23,32 +23,12 @@
 
 Chrome 웹 스토어용 전체 이미지와 프로모션 타일은 [`store-assets/3.0.0`](store-assets/3.0.0)에 있습니다.
 
-## 로컬 설치
-
-1. Chrome 또는 Edge의 확장 프로그램 관리 화면을 엽니다.
-2. 개발자 모드를 켭니다.
-3. `압축해제된 확장 프로그램을 로드`를 선택합니다.
-4. 이 폴더를 지정합니다.
-
 ## 권한과 개인정보
 
 - `storage`: 테마, 학과, 바로가기와 메인 화면 설정 저장
 - `https://dima-direct-bus-proxy.dhflyfree03.workers.dev/*`: 공개 버스 도착정보 조회
 
 GBIS 서비스 키는 확장 프로그램에 포함하지 않고 Cloudflare Worker Secret으로만 보관합니다. 사용자 계정, 학번, 비밀번호와 위치정보는 수집하거나 서버로 전송하지 않습니다.
-
-## 버스 API 경유 서버
-
-Worker 소스와 테스트는 `worker/`에 있습니다.
-
-```powershell
-Set-Location .\worker
-npm ci
-npm test
-npm run deploy:check
-```
-
-실제 배포 전 Cloudflare Secret `GBIS_SERVICE_KEY`가 등록되어 있어야 합니다. Worker 오류나 오프라인 상태에서는 확장 프로그램이 저장된 정적 시간표로 전환됩니다.
 
 ## 배포 패키지
 
@@ -60,8 +40,6 @@ npm run deploy:check
 - `data/`
 - `js/`
 - `pages/`
-
-`worker/`, `worker/.wrangler/`, `worker/node_modules/`는 확장 프로그램 ZIP에 포함하지 않습니다.
 
 ## 출처
 
