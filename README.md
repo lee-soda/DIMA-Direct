@@ -35,7 +35,9 @@ GBIS 서비스 키는 확장 프로그램에 포함하지 않고 Cloudflare Work
 ## 출처
 
 - [동아방송예술대학교](https://www.dima.ac.kr/)
-- [학교 버스 시간표](https://www.dima.ac.kr/?p=97)
 - [경기도 버스정보시스템](https://www.gbis.go.kr/)
+- [티머니 둥근바람 Regular](https://www.tmoney.co.kr/aeb/cmnctn/ci/ci.dev)
+본 확장앱에 사용된 폰트는 (주)티머니에서 배포된 "티머니 둥근바람체"이며, 해당 폰트의 서체규정 및 라이선스를 준수하여 제작하였습니다.
 
-초기 버전은 [GENYF/Ajou-Swift](https://github.com/GENYF/Ajou-Swift)를 기반으로 제작되었습니다. 학교 명칭과 로고의 권리는 동아방송예술대학교에 있습니다.
+초기 버전은 [GENYF/Ajou-Swift](https://github.com/GENYF/Ajou-Swift)를 기반으로 제작되었습니다.
+학교 명칭과 로고의 권리는 동아방송예술대학교에 있습니다.
