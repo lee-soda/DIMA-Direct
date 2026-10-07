@@ -1,0 +1,1014 @@
+@font-face {
+  font-family: 'Tmoney RoundWind Regular';
+  src: url('../assets/fonts/TmoneyRoundWindRegular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+html {
+  font-family: 'Tmoney RoundWind Regular';
+  font-synthesis: weight;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: white;
+  color: #20242c;
+  font-family: 'Tmoney RoundWind Regular';
+  font-synthesis: weight;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+  width: 480px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* 다크 테마는 구성요소별 팔레트를 사용해 로고와 노선 고유색을 보존합니다. */
+#main.dark-theme {
+  color-scheme: dark;
+  background-color: #17161a;
+  color: #f5f3f6;
+  filter: none;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.main-section[hidden] {
+  display: none;
+}
+
+/* 헤더 영역: 로고 + 설정 버튼 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-sub-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header-sub-container img {
+  height: 30px;
+}
+.buttonBox .settingsButton img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+.buttonBox .settingsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+.buttonBox .settingsButton:focus-visible {
+  outline: 3px solid rgba(213, 25, 130, 0.28);
+  outline-offset: 2px;
+}
+
+/* 바로가기 링크 그리드 */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 0;
+}
+.item-link {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #D51982;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.item-link:hover,
+.item-link:focus-visible {
+  border-color: #ab1268;
+  outline: 3px solid rgba(213, 25, 130, 0.2);
+  outline-offset: 2px;
+}
+.item-link img {
+  width: 30px;
+  height: 30px;
+}
+.item-link p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: black;
+}
+
+body[data-shortcut-view='compact'] .shortcut-section .links-grid {
+  gap: 6px;
+}
+
+body[data-shortcut-view='compact'] .item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 6px 5px;
+}
+
+body[data-shortcut-view='compact'] .item-link img {
+  display: none;
+}
+
+body[data-shortcut-view='compact'] .item-link p {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 선택적으로 표시하는 금일 학사일정 */
+.item-schedule {
+  overflow: hidden;
+  border: 1px solid #D51982;
+  border-radius: 8px;
+  background: #f9f9f9;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(213, 25, 130, 0.07);
+}
+.item-schedule:focus-visible {
+  outline: 3px solid rgba(213, 25, 130, 0.25);
+  outline-offset: 2px;
+}
+.item-date {
+  padding: 8px 10px 7px;
+  border-bottom: 1px solid rgba(213, 25, 130, 0.2);
+  background: rgba(213, 25, 130, 0.06);
+}
+.item-date p,
+.item-content p {
+  margin: 0;
+}
+.item-date p {
+  color: #B3126D;
+  font-size: 12px;
+  font-weight: 600;
+}
+.item-content {
+  padding: 8px 10px 9px;
+}
+.item-content p {
+  color: #20242c;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+/* 한국시간 기준 버스 시간표 안내 */
+.bus-board {
+  margin-top: 0;
+  border: 1px solid #e2e4e9;
+  border-radius: 10px;
+  background: #fff;
+  color: #20242c;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 3px 12px rgba(31, 36, 48, 0.06);
+}
+.bus-board-header,
+.bus-section-heading,
+.shuttle-route-heading,
+.intercity-route,
+.bus-board-footer {
+  display: flex;
+  align-items: center;
+}
+.bus-board-header {
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #20242c, #343b48);
+  color: #fff;
+}
+.bus-board-header strong {
+  min-width: 0;
+  font-weight: 600;
+  font-size: 13px;
+}
+.bus-kst-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.bus-clock-label {
+  color: #d5d9e0;
+  font-size: 9px;
+}
+.bus-clock-value {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(213, 25, 130, 0.2);
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+}
+.bus-section {
+  padding: 10px 10px 6px;
+}
+.bus-section + .bus-section {
+  border-top: 1px solid #eceef2;
+}
+.bus-section-heading {
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.bus-section-heading strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.bus-section-heading span {
+  color: #666d78;
+  font-size: 10px;
+}
+.shuttle-routes {
+  display: grid;
+  gap: 7px;
+}
+.shuttle-route {
+  border: 1px solid #e6e8ed;
+  border-radius: 8px;
+  background: #fafbfc;
+  overflow: hidden;
+}
+.shuttle-route-heading {
+  gap: 8px;
+  padding: 7px 8px 6px;
+}
+.shuttle-route-heading > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.shuttle-route-heading strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.shuttle-route-heading small {
+  margin-top: 1px;
+  color: #656c77;
+  font-size: 9px;
+}
+.route-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  background: #D51982;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.route-badge.route-b {
+  background: #3067c9;
+}
+.route-badge.route-c {
+  background: #16775f;
+}
+.bus-direction-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #eceef2;
+}
+.bus-direction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 76px;
+  padding: 7px 5px 8px;
+  text-align: center;
+}
+.bus-direction + .bus-direction {
+  border-left: 1px solid #eceef2;
+}
+.bus-direction-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 27px;
+  color: #424854;
+  font-size: 10px;
+  line-height: 1.3;
+}
+.bus-next,
+.intercity-next {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex: 0 0 auto;
+  min-width: 62px;
+}
+.bus-direction .bus-next {
+  align-items: center;
+  min-width: 0;
+  margin-top: 3px;
+}
+.bus-next strong,
+.intercity-next strong {
+  color: #1e2430;
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.bus-next small,
+.intercity-next small {
+  color: #D51982;
+  font-size: 9px;
+  line-height: 1.25;
+}
+.bus-next .bus-note,
+.intercity-next .bus-note {
+  max-width: 170px;
+  margin-top: 2px;
+  color: #6e7580;
+  text-align: right;
+}
+.bus-direction .bus-note {
+  max-width: 150px;
+  text-align: center;
+}
+.bus-next .bus-ended,
+.intercity-next .bus-ended {
+  color: #6a717c;
+  font-size: 9px;
+}
+.intercity-routes {
+  display: grid;
+  gap: 1px;
+  border: 1px solid #e6e8ed;
+  border-radius: 8px;
+  background: #e6e8ed;
+  overflow: hidden;
+}
+.intercity-group-label {
+  padding: 6px 9px 5px;
+  background: #f2f4f7;
+  color: #676e79;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.intercity-route {
+  display: block;
+  min-height: 92px;
+  padding: 8px;
+  background: #fafbfc;
+}
+.intercity-route-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.intercity-number-chain {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 4px;
+  white-space: nowrap;
+}
+.intercity-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background: #e9ecf2;
+  color: #2a303b;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.intercity-number.route-intercity {
+  background: #6f3fb4;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(55, 25, 105, 0.18);
+}
+.intercity-number.route-direct-seat {
+  background: #e60012;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(132, 0, 0, 0.16);
+}
+.intercity-number.is-retired {
+  min-width: 38px;
+  background: #eceef2;
+  color: #666d78;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+.intercity-number-arrow {
+  color: #6a717c;
+  font-size: 9px;
+}
+.intercity-destination {
+  flex: 1;
+  min-width: 0;
+  color: #424854;
+  font-size: 11px;
+}
+.intercity-source {
+  flex: 0 0 auto;
+  padding: 2px 6px;
+  border: 1px solid #d9dde4;
+  border-radius: 999px;
+  color: #737a85;
+  background: #fff;
+  font-size: 8px;
+  font-weight: 600;
+}
+.intercity-source.is-live {
+  color: #0d6a52;
+  border-color: rgba(22, 119, 95, 0.28);
+  background: rgba(22, 119, 95, 0.08);
+}
+.intercity-source.is-delayed {
+  color: #986000;
+  border-color: rgba(185, 119, 0, 0.28);
+  background: rgba(235, 160, 25, 0.1);
+}
+.intercity-source.is-operating {
+  color: #0d6a52;
+  border-color: rgba(22, 119, 95, 0.28);
+  background: rgba(22, 119, 95, 0.08);
+}
+.intercity-source.is-planned {
+  color: #986000;
+  border-color: rgba(185, 119, 0, 0.28);
+  background: rgba(235, 160, 25, 0.1);
+}
+.intercity-replacement-notice {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 7px;
+  border: 1px solid #e6e8ed;
+  border-radius: 7px;
+  padding: 8px 9px;
+  background: #fff;
+}
+.intercity-replacement-notice strong {
+  color: #2d333d;
+  font-size: 10px;
+  font-weight: 600;
+}
+.intercity-replacement-notice small {
+  color: #737a85;
+  font-size: 8px;
+  line-height: 1.35;
+}
+.intercity-replacement-notice.is-planned {
+  border-left: 3px solid #e0a126;
+  background: #fffdf8;
+}
+.intercity-replacement-notice.is-operating {
+  border-left: 3px solid #ff0000;
+}
+.intercity-arrival-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 7px;
+  border: 1px solid #e6e8ed;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.intercity-arrival {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  min-height: 57px;
+  padding: 5px 4px 6px;
+  background: #fff;
+  text-align: center;
+}
+.intercity-arrival + .intercity-arrival {
+  border-left: 1px solid #e6e8ed;
+}
+.intercity-arrival-label {
+  color: #666d78;
+  font-size: 8px;
+  line-height: 1.2;
+}
+.intercity-arrival-main {
+  margin-top: 4px;
+  color: #20242c;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.intercity-arrival-main.schedule-time {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.intercity-arrival-detail {
+  margin-top: 2px;
+  color: #D51982;
+  font-size: 8px;
+  line-height: 1.2;
+}
+.intercity-schedule-note {
+  max-width: 145px;
+  margin-top: 2px;
+  overflow: hidden;
+  color: #656c77;
+  font-size: 7px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.intercity-schedule-group-note {
+  margin: 5px 2px 0;
+  color: #666d78;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+}
+.bus-data-mode {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 7px;
+  border: 1px solid #d8dce3;
+  border-radius: 999px;
+  color: #626975 !important;
+  background: #f5f6f8;
+  font-size: 11px !important;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: right;
+}
+.bus-data-mode::before {
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  background: currentColor;
+  border-radius: 50%;
+  content: '';
+}
+.bus-data-mode.is-live {
+  color: #0d6a52 !important;
+  border-color: rgba(22, 119, 95, 0.28);
+  background: rgba(22, 119, 95, 0.08);
+}
+.bus-data-mode.is-delayed {
+  color: #986000 !important;
+  border-color: rgba(185, 119, 0, 0.28);
+  background: rgba(235, 160, 25, 0.1);
+}
+.bus-data-mode.is-mixed {
+  color: #986000 !important;
+  border-color: rgba(185, 119, 0, 0.25);
+  background: rgba(235, 160, 25, 0.09);
+}
+.bus-data-mode.is-loading::before {
+  animation: data-mode-pulse 1.2s ease-in-out infinite;
+}
+.intercity-meta {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3px;
+  margin: 7px 2px 0;
+  color: #666d78;
+  font-size: 8px;
+}
+
+#intercity-updated-at {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#intercity-updated-at::before {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 auto;
+  background: #D51982;
+  border-radius: 50%;
+  content: '';
+}
+
+.intercity-disclaimer {
+  width: 100%;
+  margin: 0;
+  color: #666d78;
+  font-size: 8px;
+  line-height: 1.45;
+  text-align: left;
+  word-break: keep-all;
+}
+
+@keyframes data-mode-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.bus-service-status {
+  margin: 0;
+  border: 1px dashed #d6d9df;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafbfc;
+  color: #737a85;
+  font-size: 10px;
+  text-align: center;
+}
+.bus-board-footer {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 7px 10px 9px;
+  border-top: 1px solid #eceef2;
+  gap: 10px;
+}
+.bus-board-footer p {
+  margin: 0;
+  color: #666d78;
+  font-size: 9px;
+  line-height: 1.35;
+}
+.bus-board-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: 0 6px;
+  border-radius: 6px;
+  color: #D51982;
+  font-size: 9px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bus-board-footer a:hover {
+  text-decoration: underline;
+}
+.bus-board-footer a:focus-visible {
+  outline: 3px solid rgba(213, 25, 130, 0.22);
+  outline-offset: 1px;
+}
+
+/* 푸터 정보 스타일 */
+.footer {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #555;
+}
+.footer a {
+  text-decoration: none;
+  color: #555;
+}
+.footer a:hover {
+  color: #000;
+}
+
+/* 팝업 다크 테마 */
+#main.dark-theme .header-sub-container > div:first-child {
+  display: flex;
+  align-items: center;
+  padding: 5px 7px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#main.dark-theme .buttonBox .settingsButton img {
+  filter: brightness(0) invert(1);
+}
+
+#main.dark-theme .item-link {
+  background: #242329;
+  border-color: #ff65b9;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+#main.dark-theme .item-link:hover,
+#main.dark-theme .item-link:focus-visible {
+  background: #2d2b32;
+  border-color: #ff8ac9;
+  outline: 3px solid rgba(255, 101, 185, 0.28);
+  outline-offset: 2px;
+}
+
+#main.dark-theme .item-link img {
+  padding: 3px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+#main.dark-theme .item-link p {
+  color: #f5f3f6;
+}
+
+#main.dark-theme .item-schedule {
+  background: #242329;
+  border-color: #ff65b9;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+#main.dark-theme .item-date {
+  background: rgba(255, 101, 185, 0.13);
+  border-bottom-color: rgba(255, 101, 185, 0.3);
+}
+
+#main.dark-theme .item-date p {
+  color: #ff8ac9;
+}
+
+#main.dark-theme .item-content p {
+  color: #f5f3f6;
+}
+
+#main.dark-theme .bus-board {
+  color: #f5f3f6;
+  background: #222126;
+  border-color: #3b3942;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+#main.dark-theme .bus-board-header {
+  background: linear-gradient(135deg, #25242a, #34313b);
+}
+
+#main.dark-theme .bus-section + .bus-section,
+#main.dark-theme .bus-board-footer {
+  border-color: #35333b;
+}
+
+#main.dark-theme .bus-section-heading span,
+#main.dark-theme .shuttle-route-heading small,
+#main.dark-theme .bus-next .bus-note,
+#main.dark-theme .intercity-next .bus-note,
+#main.dark-theme .bus-next .bus-ended,
+#main.dark-theme .intercity-next .bus-ended {
+  color: #b6b2bb;
+}
+
+#main.dark-theme .shuttle-route {
+  background: #2a292f;
+  border-color: #3b3942;
+}
+
+#main.dark-theme .bus-direction-grid,
+#main.dark-theme .bus-direction + .bus-direction {
+  border-color: #3b3942;
+}
+
+#main.dark-theme .bus-direction-label,
+#main.dark-theme .intercity-destination {
+  color: #ded9e1;
+}
+
+#main.dark-theme .bus-next strong,
+#main.dark-theme .intercity-next strong,
+#main.dark-theme .intercity-arrival-main {
+  color: #f5f3f6;
+}
+
+#main.dark-theme .bus-next small,
+#main.dark-theme .intercity-next small,
+#main.dark-theme .intercity-arrival-detail {
+  color: #ff8ac9;
+}
+
+#main.dark-theme .intercity-routes {
+  background: #3b3942;
+  border-color: #3b3942;
+}
+
+#main.dark-theme .intercity-group-label {
+  color: #b6b2bb;
+  background: #302f36;
+}
+
+#main.dark-theme .intercity-route {
+  color: #f5f3f6;
+  background: #2a292f;
+}
+
+#main.dark-theme .intercity-number {
+  color: #f5f3f6;
+  background: #3a3841;
+}
+
+#main.dark-theme .intercity-number.route-intercity {
+  color: #ffffff;
+  background: #6f3fb4;
+}
+
+#main.dark-theme .intercity-number.route-direct-seat {
+  color: #ffffff;
+  background: #e60012;
+}
+
+#main.dark-theme .intercity-number.is-retired {
+  color: #9e98a4;
+  background: #34323a;
+}
+
+#main.dark-theme .intercity-number-arrow,
+#main.dark-theme .intercity-arrival-label,
+#main.dark-theme .intercity-schedule-note,
+#main.dark-theme .intercity-schedule-group-note,
+#main.dark-theme .intercity-meta,
+#main.dark-theme .intercity-disclaimer {
+  color: #aaa5af;
+}
+
+#main.dark-theme #intercity-updated-at::before {
+  background: #ff65b9;
+}
+
+#main.dark-theme .intercity-source,
+#main.dark-theme .bus-data-mode {
+  color: #b6b2bb !important;
+  background: #242329;
+  border-color: #4a4751;
+}
+
+#main.dark-theme .intercity-source.is-live,
+#main.dark-theme .intercity-source.is-operating,
+#main.dark-theme .bus-data-mode.is-live {
+  color: #72d9ae !important;
+  background: rgba(114, 217, 174, 0.1);
+  border-color: rgba(114, 217, 174, 0.34);
+}
+
+#main.dark-theme .intercity-source.is-delayed,
+#main.dark-theme .intercity-source.is-planned,
+#main.dark-theme .bus-data-mode.is-delayed,
+#main.dark-theme .bus-data-mode.is-mixed {
+  color: #f2c46d !important;
+  background: rgba(242, 196, 109, 0.1);
+  border-color: rgba(242, 196, 109, 0.34);
+}
+
+#main.dark-theme .intercity-replacement-notice {
+  background: #222126;
+  border-color: #3b3942;
+}
+
+#main.dark-theme .intercity-replacement-notice strong {
+  color: #f5f3f6;
+}
+
+#main.dark-theme .intercity-replacement-notice small {
+  color: #b6b2bb;
+}
+
+#main.dark-theme .intercity-replacement-notice.is-planned {
+  background: rgba(224, 161, 38, 0.08);
+}
+
+#main.dark-theme .intercity-arrival-grid {
+  border-color: #3b3942;
+}
+
+#main.dark-theme .intercity-arrival {
+  color: #f5f3f6;
+  background: #222126;
+}
+
+#main.dark-theme .intercity-arrival + .intercity-arrival {
+  border-color: #3b3942;
+}
+
+#main.dark-theme .bus-service-status {
+  color: #b6b2bb;
+  background: #2a292f;
+  border-color: #4a4751;
+}
+
+#main.dark-theme .bus-board-footer p {
+  color: #aaa5af;
+}
+
+#main.dark-theme .bus-board-footer a {
+  color: #ff8ac9;
+}
+
+#main.dark-theme .footer,
+#main.dark-theme .footer a {
+  color: #b6b2bb;
+}
+
+#main.dark-theme .footer a:hover {
+  color: #f5f3f6;
+}
+
+/* 400px 팝업에서도 지나치게 작아지지 않는 반응형 글자 체계 */
+body {
+  font-size: clamp(15px, 3.9vw, 16px);
+  line-height: 1.45;
+}
+
+.item-link p,
+.item-date p,
+.item-content p,
+.bus-section-heading strong,
+.shuttle-route-heading strong,
+.intercity-destination {
+  font-size: clamp(12.5px, 3.25vw, 13.5px);
+}
+
+body[data-shortcut-view='compact'] .item-link p,
+.bus-section-heading span,
+.shuttle-route-heading small,
+.bus-direction,
+.intercity-replacement-notice strong,
+.intercity-arrival-main,
+.bus-empty,
+.footer {
+  font-size: clamp(12px, 3vw, 13px);
+}
+
+.bus-board-header strong,
+.bus-next strong,
+.intercity-next strong,
+.intercity-arrival-main.schedule-time {
+  font-size: clamp(14px, 3.7vw, 15px);
+}
+
+.bus-clock-label,
+.bus-clock-value,
+.bus-direction-label,
+.bus-next small,
+.intercity-next small,
+.bus-next .bus-ended,
+.intercity-next .bus-ended,
+.shuttle-route-badge,
+.intercity-number,
+.intercity-group-label,
+.intercity-status,
+.intercity-replacement-notice small,
+.intercity-arrival-label,
+.intercity-arrival-detail,
+.intercity-arrival-stop,
+.intercity-static-badge,
+.intercity-source-note,
+.intercity-source,
+.bus-data-mode,
+.intercity-meta,
+#intercity-updated-at,
+.intercity-schedule-note,
+.intercity-schedule-group-note,
+.intercity-disclaimer,
+.bus-board-footer p,
+.bus-board-footer a {
+  font-size: clamp(12px, 3vw, 13px) !important;
+}
+
+.item-link p,
+.item-date p,
+.bus-board-header strong,
+.bus-section-heading strong,
+.shuttle-route-heading strong,
+.intercity-destination,
+.intercity-replacement-notice strong,
+.bus-next strong,
+.intercity-next strong {
+  font-weight: 700;
+}

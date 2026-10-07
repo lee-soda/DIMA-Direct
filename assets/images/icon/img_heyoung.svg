@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heyoung-gradient" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C93FF"/>
+      <stop offset="1" stop-color="#6F77E4"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="17" fill="url(#heyoung-gradient)"/>
+  <path d="M20 18V46M44 18V46M20 32H44" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="47" cy="17" r="5" fill="#FFD95A" stroke="white" stroke-width="2"/>
+</svg>

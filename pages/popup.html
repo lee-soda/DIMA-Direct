@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>DIMA Direct Popup</title>
+  <link rel="icon" href="../assets/images/logo/dima-direct-icon-32.png" />
+  <link rel="stylesheet" href="../css/popup.css" />
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/popup.js" defer></script>
+</head>
+<body id="main">
+  <div class="main-container">
+    <!-- 헤더: 로고 및 설정 버튼 -->
+    <div class="header">
+      <div class="header-sub-container">
+        <div style="text-align:left;">
+          <img src="../assets/images/logo/img_mainlogo.png" alt="DIMA 로고" />
+        </div>
+        <div class="buttonBox">
+          <a class="settingsButton" href="../pages/options.html" target="_blank" rel="noopener noreferrer" aria-label="설정 새 탭에서 열기">
+            <img src="../assets/images/icon/img_settings.png" alt="설정" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-sections" id="main-sections">
+      <!-- 사용자가 구성한 바로가기 그리드 -->
+      <section class="main-section shortcut-section" id="main-section-shortcuts" data-main-section="shortcuts" hidden>
+        <div class="links-grid" id="popup-links-grid"></div>
+      </section>
+
+      <!-- 선택적으로 표시하는 금일 학사일정 -->
+      <section
+        class="main-section item-schedule"
+        id="main-section-schedule"
+        data-main-section="schedule"
+        role="link"
+        tabindex="0"
+        aria-label="학교 공식 학사일정 열기"
+        hidden
+      >
+        <div class="item-date"><p id="schedule-date">금일 학사일정</p></div>
+        <div class="item-content"><p id="schedule-text">불러오는 중...</p></div>
+      </section>
+
+      <!-- 교내 셔틀버스 시간표 -->
+      <section class="main-section bus-board" id="main-section-shuttle" data-main-section="shuttle" aria-labelledby="shuttle-board-title" hidden>
+        <div class="bus-board-header">
+          <strong id="shuttle-board-title">셔틀버스 시간표</strong>
+          <time class="bus-kst-clock">
+            <span class="bus-clock-label">현재 시각</span>
+            <span class="bus-clock-value">(-) --:--:--</span>
+          </time>
+        </div>
+
+        <div class="bus-section" aria-labelledby="shuttle-title">
+          <div class="bus-section-heading">
+            <strong id="shuttle-title">교내 셔틀</strong>
+            <span>출발시간 기준</span>
+          </div>
+          <div class="shuttle-routes" id="shuttle-routes" aria-live="polite"></div>
+        </div>
+
+        <div class="bus-board-footer">
+          <p id="shuttle-notice"></p>
+          <a href="https://www.dima.ac.kr/?p=97" target="_blank" rel="noopener noreferrer">전체 시간표 ↗</a>
+        </div>
+      </section>
+
+      <!-- 시외버스 시간표 -->
+      <section class="main-section bus-board" id="main-section-intercity" data-main-section="intercity" aria-labelledby="intercity-board-title" hidden>
+        <div class="bus-board-header">
+          <strong id="intercity-board-title">시외버스 시간표</strong>
+          <time class="bus-kst-clock">
+            <span class="bus-clock-label">현재 시각</span>
+            <span class="bus-clock-value">(-) --:--:--</span>
+          </time>
+        </div>
+
+        <div class="bus-section intercity-section" aria-labelledby="intercity-title">
+          <div class="bus-section-heading">
+            <strong id="intercity-title">노선 안내</strong>
+            <span class="bus-data-mode is-loading" id="intercity-live-status">실시간 연결 중 · 시간표 기준</span>
+          </div>
+          <div class="intercity-routes" id="intercity-routes" aria-live="polite"></div>
+          <div class="intercity-meta">
+            <span id="intercity-updated-at">저장된 시간표 표시 중</span>
+            <p class="intercity-disclaimer" id="intercity-disclaimer"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 푸터: 제작자 정보 -->
+    <div class="footer">
+      <a href="https://github.com/lee-soda/DIMA-Direct" target="_blank" rel="noopener noreferrer">
+        developed by Lee Soda<br/>DIMA Direct - Ver.3.0
+      </a>
+    </div>
+  </div>
+</body>
+</html>

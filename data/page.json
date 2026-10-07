@@ -1,114 +1,98 @@
 {
-    "홈페이지" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://dima.ac.kr/?p=1"
+    "홈페이지": {
+      "IMG": "../assets/images/icon/icon_home.svg",
+      "URL": "https://dima.ac.kr/?p=1"
     },
-    "인트라넷" : {
-        "IMG" : "../images/icon/img_potal.png",
-        "URL" : "https://portal.dima.ac.kr/"
+    "인트라넷": {
+      "IMG": "../assets/images/icon/img_portal.png",
+      "URL": "https://portal.dima.ac.kr/"
     },
-    "DIMA C" : {
-        "IMG" : "../images/icon/img_DIMA-C.png",
-        "URL" : "http://udimac.dima.ac.kr/"
+    "DIMA C": {
+      "IMG": "../assets/images/icon/img_DIMA-C.png",
+      "URL": "https://udimac.dima.ac.kr/sso/index.jsp"
     },
-    "전자출결" : {
-        "IMG" : "../images/icon/img_attend.png",
-        "URL" : "https://attend.dima.ac.kr/"
+    "장비대여": {
+      "IMG": "../assets/images/icon/icon_equipment.svg",
+      "URL": "https://udimac.dima.ac.kr/forward/ST/MP/RT/ST_MPRT01_L01.do?MENU_CD=03120101"
     },
-    "장비대여" : {
-        "IMG" : "../images/icon/img_rental.png",
-        "URL" : "https://udimac.dima.ac.kr/forward/ST/MP/RT/ST_MPRT01_L01.do?MENU_CD=03120101"
+    "버스시간표": {
+      "IMG": "../assets/images/icon/icon_bus.svg",
+      "URL": "https://dima.ac.kr/?p=97"
     },
-    "버스시간표" : {
-        "IMG" : "../images/icon/img_bus.png",
-        "URL" : "https://dima.ac.kr/?p=97"
+    "에브리타임": {
+      "IMG": "../assets/images/icon/img_everytime.png",
+      "URL": "https://dima.everytime.kr/"
     },
-    "에브리타임" : {
-        "IMG" : "../images/icon/img_everytime.png",
-        "URL" : "https://dima.everytime.kr/"
+    "나의 학과": {
+      "IMG": "../assets/images/icon/icon_department.svg",
+      "URL": "../pages/options.html"
     },
-    "나의 학과" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "../options/options.html"
+    "공지사항": {
+      "IMG": "../assets/images/icon/icon_notice.svg",
+      "URL": "https://dima.ac.kr/?p=111"
     },
-    "사이트맵" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "http://www.dima.ac.kr/etc/etc_sitemap.aspx"
+    "헤이영": {
+      "IMG": "../assets/images/icon/img_heyoung.svg",
+      "URL": "https://campus.heyoung.co.kr/screen/HCO0101M01"
     },
-    "공지사항" : {
-        "IMG" : "../images/icon/img_notice.svg",
-        "URL" : "https://dima.ac.kr/?p=111"
+    "수강신청": {
+      "IMG": "../assets/images/icon/icon_registration.svg",
+      "URL": "https://intranet.dima.ac.kr/su/cr/default.aspx"
     },
-    "학사일정" : {
-      "IMG" : "../images/icon/img_site.png",
-      "URL" : "https://dima.ac.kr/?p=78"
+    "기숙사 외출 · 외박": {
+      "IMG": "../assets/images/icon/icon_dormitory.svg",
+      "URL": "https://intranet.dima.ac.kr/dormi/outingApply.aspx"
     },
-    "수강신청" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://intranet.dima.ac.kr/su/cr/default.aspx"
+    "시간표 조회": {
+      "IMG": "../assets/images/icon/icon_timetable.svg",
+      "URL": "https://intranet.dima.ac.kr/su/timeTable_Stnt.aspx"
     },
-    "외출외박신청" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://intranet.dima.ac.kr/dormi/outingApply.aspx"
+    "교과목 조회": {
+      "IMG": "../assets/images/icon/icon_subject.svg",
+      "URL": "https://intranet.dima.ac.kr/su/subjectInfo.aspx"
     },
-    "시간표 조회" : {
-        "IMG" : "../images/icon/img_calendar.svg",
-        "URL" : "https://intranet.dima.ac.kr/su/timeTable_Stnt.aspx"
+    "학교 이메일": {
+      "IMG": "../assets/images/icon/icon_email.svg",
+      "URL": "https://intranet.dima.ac.kr/mail/new_o365.aspx"
     },
-    "교과목 조회" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://intranet.dima.ac.kr/su/subjectInfo.aspx"
+    "교내 전화번호": {
+      "IMG": "../assets/images/icon/icon_phone.svg",
+      "URL": "https://dima.ac.kr/?p=127"
     },
-    "학교 이메일" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://intranet.dima.ac.kr/mail/new_o365.aspx"
+    "LMS": {
+      "IMG": "../assets/images/icon/img_lms.png",
+      "URL": "https://lms.smau.or.kr/dima"
     },
-    "교내 전화번호" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://dima.ac.kr/?p=127"
+    "시설대여": {
+      "IMG": "../assets/images/icon/icon_facility.svg",
+      "URL": "https://udimac.dima.ac.kr/forward/ST/MP/CR/ST_MPCR01_L01.do?MENU_CD=03020401"
     },
-    "LMS" : {
-        "IMG" : "../images/icon/img_lms.png",
-        "URL" : "https://lms.smau.or.kr/dima"
+    "실습실대여": {
+      "IMG": "../assets/images/icon/icon_lab.svg",
+      "URL": "https://udimac.dima.ac.kr/forward/ST/RT/RR/ST_RTRR01_L01.do?MENU_CD=03120201"
     },
-    "시설대여" : {
-        "IMG" : "../images/icon/img_rental.png",
-        "URL" : "https://udimac.dima.ac.kr/forward/ST/MP/CR/ST_MPCR01_L01.do?MENU_CD=03020401"
+    "채용정보": {
+      "IMG": "../assets/images/icon/icon_jobs.svg",
+      "URL": "https://udimac.dima.ac.kr/forward/ST/RE/EI/ST_REEI01_L01.do?MENU_CD=03050301"
     },
-    "실습실대여" : {
-        "IMG" : "../images/icon/img_rental.png",
-        "URL" : "https://udimac.dima.ac.kr/forward/ST/RT/RR/ST_RTRR01_L01.do?MENU_CD=03120201"
+    "입시 홈페이지": {
+      "IMG": "../assets/images/icon/icon_admission.svg",
+      "URL": "https://ipsi.dima.ac.kr/dima/ipsi/main.do"
     },
-    "채용정보" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://udimac.dima.ac.kr/forward/ST/RE/EI/ST_REEI01_L01.do?MENU_CD=03050301"
+    "도서관": {
+      "IMG": "../assets/images/icon/icon_library.svg",
+      "URL": "https://lib.dima.ac.kr/"
     },
-    "입시 홈페이지" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://ipsi.dima.ac.kr/dima/ipsi/main.do"
+    "디마티비": {
+      "IMG": "../assets/images/icon/icon_tv.svg",
+      "URL": "https://dimatv.co.kr/main"
     },
-    "도서관" : {
-        "IMG" : "../images/icon/img_library.svg",
-        "URL" : "http://lib.dima.ac.kr/"
+    "웹증명발급": {
+      "IMG": "../assets/images/icon/icon_certificate.svg",
+      "URL": "https://dima.certpia.com/"
     },
-    "디마티비" : {
-        "IMG" : "../images/icon/img_dima-tv.png",
-        "URL" : "http://dimatv.co.kr/"
-    },
-    "웹증명발급" : {
-        "IMG" : "../images/icon/img_web.svg",
-        "URL" : "http://dima.certpia.com/"
-    },
-    "전공심화" : {
-        "IMG" : "../images/icon/img_site.png",
-        "URL" : "https://dima.ac.kr/?p=69"
-    },
-    "창의융합교양학부" : {
-      "IMG" : "../images/icon/img_site.png",
-      "URL" : "https://dima.ac.kr/?p=43"
-    },
-    "무인 프린트" : {
-      "IMG" : "../images/icon/img_print.svg",
-      "URL" : "http://copy.dima.ac.kr/epwac/Login.aspx"
+    "전공심화": {
+      "IMG": "../assets/images/icon/icon_advanced.svg",
+      "URL": "https://dima.ac.kr/?p=70"
     }
-}
+  }

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIMA Direct 설정</title>
+  <link rel="icon" href="../assets/images/logo/dima-direct-icon-32.png" />
+  <link rel="stylesheet" href="../css/options.css" />
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/options.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand-block">
+        <img src="../assets/images/logo/img_mainlogo.png" alt="DIMA Direct" />
+        <div>
+          <p class="eyebrow">DIMA DIRECT</p>
+          <h1>설정</h1>
+          <p class="header-description">메인 화면, 바로가기와 나의 학과를 한곳에서 관리하세요.</p>
+        </div>
+      </div>
+      <div class="header-department-card current-department-panel">
+        <div class="panel-heading">
+          <div>
+            <h3>현재 나의 학과</h3>
+            <p>팝업의 ‘나의 학과’ 바로가기에 연결됩니다.</p>
+          </div>
+          <span class="current-badge">선택됨</span>
+        </div>
+        <div class="current-department">
+          <div>
+            <strong id="current-department-name">선택된 학과 없음</strong>
+            <span id="current-department-group">아래 목록에서 학과를 선택하세요.</span>
+          </div>
+          <a id="current-department-link" href="#department-settings" data-settings-link>학과 선택하기</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="settings-quick-nav" aria-label="설정 메뉴 바로가기">
+      <a href="#settings-basic" data-settings-link>기본 설정</a>
+      <a href="#settings-layout" data-settings-link>메인 화면</a>
+      <a href="#department-settings" data-settings-link>나의 학과</a>
+      <a href="#settings-shortcuts" data-settings-link>빠른 실행</a>
+      <a class="is-reset" href="#settings-reset" data-settings-link>리셋</a>
+    </nav>
+
+    <main class="settings-stack">
+      <section class="settings-card preferences-card" id="settings-basic" aria-labelledby="preferences-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">기본 설정</p>
+            <h2 id="preferences-title">화면 표시 방식</h2>
+          </div>
+        </div>
+
+        <div class="preference-grid">
+          <div class="preference-panel shortcut-view-panel">
+            <div class="panel-heading">
+              <div>
+                <h3>바로가기 보기</h3>
+                <p>이미지 버튼 또는 공간을 적게 쓰는 글자 버튼으로 표시합니다.</p>
+              </div>
+            </div>
+            <div class="shortcut-view-options" id="shortcut-view-buttons" role="group" aria-label="바로가기 보기 선택">
+              <button class="shortcut-view-option" type="button" data-shortcut-view="icons" aria-pressed="false">
+                <span class="shortcut-view-preview preview-icons" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </span>
+                <span class="theme-copy">
+                  <strong>이미지형</strong>
+                  <small>아이콘과 이름을 함께 표시</small>
+                </span>
+                <span class="selection-mark" aria-hidden="true">✓</span>
+              </button>
+              <button class="shortcut-view-option" type="button" data-shortcut-view="compact" aria-pressed="false">
+                <span class="shortcut-view-preview preview-compact" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </span>
+                <span class="theme-copy">
+                  <strong>간략형</strong>
+                  <small>이미지 없이 이름만 표시</small>
+                </span>
+                <span class="selection-mark" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="preference-panel">
+            <div class="panel-heading">
+              <div>
+                <h3>테마</h3>
+                <p>팝업과 설정 화면의 표시 방식을 선택합니다.</p>
+              </div>
+            </div>
+            <div class="theme-options" id="theme-buttons" role="group" aria-label="테마 선택">
+              <button class="theme-option" type="button" data-color="white" aria-pressed="false">
+                <span class="theme-preview theme-preview-light" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                <span class="theme-copy">
+                  <strong>라이트</strong>
+                  <small>밝고 선명한 화면</small>
+                </span>
+                <span class="selection-mark" aria-hidden="true">✓</span>
+              </button>
+              <button class="theme-option" type="button" data-color="black" aria-pressed="false">
+                <span class="theme-preview theme-preview-dark" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                <span class="theme-copy">
+                  <strong>다크</strong>
+                  <small>눈부심을 줄인 화면</small>
+                </span>
+                <span class="selection-mark" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-card layout-card" id="settings-layout" aria-labelledby="layout-title">
+        <div class="section-heading section-heading-with-tools">
+          <div>
+            <p class="section-kicker">메인 화면</p>
+            <h2 id="layout-title">섹터 구성</h2>
+            <p>카드를 끌어 순서를 바꾸고, 표시할 섹터와 셔틀버스 노선을 선택하세요.</p>
+          </div>
+        </div>
+        <div class="layout-list" id="main-layout-list" aria-label="메인 화면 섹터 구성" aria-describedby="layout-drag-help"></div>
+        <p class="drag-help" id="layout-drag-help">왼쪽 손잡이를 끌어 배치합니다. 키보드는 손잡이에서 Alt + ↑·↓를 사용할 수 있습니다.</p>
+      </section>
+
+      <section class="settings-card department-card" id="department-settings" aria-labelledby="department-title">
+        <div class="section-heading section-heading-with-tools">
+          <div>
+            <p class="section-kicker">나의 학과</p>
+            <div class="department-title-row">
+              <h2 id="department-title">학과 선택</h2>
+              <span
+                class="department-change-status"
+                id="department-change-status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+                hidden
+              ></span>
+            </div>
+            <p>학부·과정별로 찾거나 학과명·축약어를 검색하세요.</p>
+          </div>
+          <div class="department-heading-tools">
+            <button
+              class="section-toggle"
+              id="department-toggle"
+              type="button"
+              aria-expanded="true"
+              aria-controls="department-selector-content"
+            >
+              <span class="section-toggle-label">접기</span>
+              <span class="section-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="department-selector-content" id="department-selector-content">
+          <div class="department-toolbar">
+            <label class="search-field" for="department-search">
+              <span class="search-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">학과 검색</span>
+              <input
+                id="department-search"
+                type="search"
+                autocomplete="off"
+                placeholder="학과명, 학부명 또는 축약어 검색"
+              />
+              <kbd>ESC</kbd>
+            </label>
+            <p id="department-result-count" aria-live="polite"></p>
+          </div>
+
+          <div class="department-groups" id="department-groups"></div>
+          <div class="empty-state" id="department-empty" hidden>
+            <strong>일치하는 학과가 없습니다.</strong>
+            <p>검색어를 줄이거나 다른 이름으로 검색해 보세요.</p>
+          </div>
+          <div class="department-bottom-actions">
+            <button class="department-collapse-bottom" id="department-collapse-bottom" type="button" aria-controls="department-selector-content">
+              <span>학과 선택 접기</span>
+              <span class="section-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-card links-card" id="settings-shortcuts" aria-labelledby="links-title">
+        <div class="section-heading section-heading-with-tools">
+          <div>
+            <p class="section-kicker">빠른 실행</p>
+            <h2 id="links-title">바로가기 배치</h2>
+            <p>원하는 기능을 추가하고 순서를 바꿔 나만의 바로가기를 구성하세요. 최소 4개는 유지됩니다.</p>
+          </div>
+        </div>
+        <div class="shortcut-library-panel">
+          <div class="shortcut-panel-heading">
+            <strong>기능 버튼</strong>
+            <span>클릭하면 맨 뒤에 추가되고, 기존 칸에 끌어 놓으면 해당 칸이 변경됩니다.</span>
+          </div>
+          <div class="shortcut-library" id="shortcut-library" aria-label="사용 가능한 바로가기"></div>
+        </div>
+        <div class="shortcut-layout-heading">
+          <strong>팝업에 표시할 바로가기</strong>
+          <span id="shortcut-count-label" aria-live="polite">구성 불러오는 중 · 최소 4개</span>
+        </div>
+        <span class="visually-hidden" id="active-shortcut-label" aria-live="polite">1번 칸 선택됨</span>
+        <div class="links-grid" id="links-grid" aria-label="바로가기 배치 영역"></div>
+        <p class="drag-help">× 버튼으로 삭제할 수 있으며 최소 4개는 유지됩니다. 배치된 버튼을 끌거나 Alt + 방향키로 순서를 바꿀 수 있습니다.</p>
+      </section>
+
+      <section class="reset-card" id="settings-reset" aria-labelledby="reset-title">
+        <div>
+          <h2 id="reset-title">처음 설정으로 되돌리기</h2>
+          <p>테마, 바로가기 보기, 메인 화면 구성, 학과, 바로가기 구성을 모두 기본값으로 초기화합니다.</p>
+        </div>
+        <button id="btn-reset-settings" type="button">기본값으로 초기화</button>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="apply-message" role="status" aria-live="polite" aria-atomic="true">
+    <span aria-hidden="true">✓</span>
+    <span id="apply-message-text">저장되었습니다.</span>
+  </div>
+</body>
+</html>

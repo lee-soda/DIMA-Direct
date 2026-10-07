@@ -1,65 +1,177 @@
 {
-    "나의 학과" : {
-        "URL" : "../options/options.html"
-    },
-    "방송기술과" : {
-        "URL" : "https://dima.ac.kr/?p=47"
-    },
-    "음향제작과" : {
-        "URL" : "https://dima.ac.kr/?p=48"
-    },
-    "뉴미디어콘텐츠과" : {
-        "URL" : "https://dima.ac.kr/?p=49"
-    },
-    "영상제작과" : {
-        "URL" : "https://dima.ac.kr/?p=51"
-    },
-    "방송콘텐츠제작과" : {
-        "URL" : "https://dima.ac.kr/?p=52"
-    },
-    "방송극작과" : {
-        "URL" : "https://dima.ac.kr/?p=53"
-    },
-    "광고크리에이티브과" : {
-        "URL" : "https://dima.ac.kr/?p=54"
-    },
-    "디지털영상디자인과" : {
-        "URL" : "https://dima.ac.kr/?p=55"
-    },
-    "연극과" : {
-        "URL" : "https://dima.ac.kr/?p=57"
-    },
-	"뮤지컬과" : {
-        "URL" : "https://dima.ac.kr/?p=57"
-    },
-    "영화예술과" : {
-        "URL" : "https://dima.ac.kr/?p=58"
-    },
-    "무대미술과" : {
-        "URL" : "https://dima.ac.kr/?p=59"
-    },
-    "기악과" : {
-        "URL" : "https://dima.ac.kr/?p=61"
-    },
-    "성악(보컬)과" : {
-        "URL" : "https://dima.ac.kr/?p=62"
-    },
-    "작곡과" : {
-        "URL" : "https://dima.ac.kr/?p=63"
-    },
-    "K-POP과" : {
-        "URL" : "https://dima.ac.kr/?p=65"
-    },
-    "방송영화연기과" : {
-        "URL" : "https://dima.ac.kr/?p=66"
-    },
-    "패션스타일리스트과" : {
-        "URL" : "https://dima.ac.kr/?p=67"
-    },
-    "엔터테인먼트경영과" : {
-        "URL" : "https://dima.ac.kr/?p=68"
-    },
-    "전공심화" : {
-        "URL" : "https://dima.ac.kr/?p=69"
-    }
+  "나의 학과": {
+    "URL": "../pages/options.html"
+  },
+  "음향제작과": {
+    "departmentID": "AUDIO_PRODUCTION",
+    "group": "미디어창작학부",
+    "searchAliases": ["음제"],
+    "URL": "https://www.dima.ac.kr/?p=48"
+  },
+  "뉴미디어콘텐츠과": {
+    "departmentID": "NEW_MEDIA_CONTENT",
+    "group": "미디어창작학부",
+    "searchAliases": ["뉴콘"],
+    "URL": "https://www.dima.ac.kr/?p=49"
+  },
+  "디지털영상디자인과": {
+    "departmentID": "DIGITAL_VIDEO_DESIGN",
+    "group": "미디어창작학부",
+    "searchAliases": ["디영디"],
+    "URL": "https://www.dima.ac.kr/?p=221"
+  },
+  "무대미술과": {
+    "departmentID": "STAGE_ART",
+    "group": "미디어창작학부",
+    "searchAliases": ["무미", "무미과"],
+    "URL": "https://www.dima.ac.kr/?p=222"
+  },
+  "영상제작과": {
+    "departmentID": "VIDEO_PRODUCTION",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["영제"],
+    "URL": "https://www.dima.ac.kr/?p=51"
+  },
+  "방송콘텐츠제작과": {
+    "departmentID": "BROADCAST_CONTENT_PRODUCTION",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["방콘", "방보", "콘제"],
+    "URL": "https://www.dima.ac.kr/?p=209"
+  },
+  "영화예술과": {
+    "departmentID": "FILM_ART",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["영화과", "영화"],
+    "URL": "https://www.dima.ac.kr/?p=227"
+  },
+  "방송극작과": {
+    "departmentID": "BROADCAST_WRITING",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["방극"],
+    "URL": "https://www.dima.ac.kr/?p=53"
+  },
+  "광고크리에이티브과": {
+    "departmentID": "AD_CREATIVE",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["광고과", "광고", "광크"],
+    "URL": "https://www.dima.ac.kr/?p=210"
+  },
+  "패션스타일리스트과": {
+    "departmentID": "FASHION_STYLIST",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["패션", "패션과"],
+    "URL": "https://www.dima.ac.kr/?p=223"
+  },
+  "엔터테인먼트경영과": {
+    "departmentID": "ENTERTAINMENT_MANAGEMENT",
+    "group": "콘텐츠창작학부",
+    "searchAliases": ["엔경", "엔터"],
+    "URL": "https://www.dima.ac.kr/?p=224"
+  },
+  "연극과": {
+    "departmentID": "THEATER",
+    "group": "공연예술학부",
+    "searchAliases": ["연극"],
+    "URL": "https://www.dima.ac.kr/?p=211"
+  },
+  "뮤지컬과": {
+    "departmentID": "MUSICAL",
+    "group": "공연예술학부",
+    "searchAliases": ["뮤과", "뮤지컬"],
+    "URL": "https://www.dima.ac.kr/?p=216"
+  },
+  "방송영화연기과": {
+    "departmentID": "FILM_ACTING",
+    "group": "공연예술학부",
+    "searchAliases": ["방연", "방송영화"],
+    "URL": "https://www.dima.ac.kr/?p=225"
+  },
+  "K-POP과": {
+    "departmentID": "KPOP",
+    "group": "공연예술학부",
+    "searchAliases": ["K-POP", "케팝", "케이팝", "KPOP", "K POP"],
+    "URL": "https://www.dima.ac.kr/?p=226"
+  },
+  "기악과": {
+    "departmentID": "INSTRUMENTAL",
+    "group": "실용음악학부",
+    "searchAliases": ["기악"],
+    "URL": "https://www.dima.ac.kr/?p=212"
+  },
+  "보컬과": {
+    "departmentID": "VOCAL",
+    "group": "실용음악학부",
+    "searchAliases": ["보컬"],
+    "URL": "https://www.dima.ac.kr/?p=213"
+  },
+  "작곡과": {
+    "departmentID": "COMPOSITION",
+    "group": "실용음악학부",
+    "searchAliases": ["작곡"],
+    "URL": "https://www.dima.ac.kr/?p=214"
+  },
+  "콘텐츠제작학과": {
+    "departmentID": "ADVANCED_CONTENT_PRODUCTION",
+    "group": "전공심화",
+    "searchAliases": ["뉴콘", "디영디", "영제", "방콘", "방보", "콘제"],
+    "URL": "https://www.dima.ac.kr/?p=70"
+  },
+  "방송기술학과": {
+    "departmentID": "ADVANCED_BROADCAST_TECHNOLOGY",
+    "group": "전공심화",
+    "searchAliases": ["방기", "방자", "방송기술", "방자과"],
+    "URL": "https://www.dima.ac.kr/?p=71"
+  },
+  "연기예술학과": {
+    "departmentID": "ADVANCED_ACTING_ARTS",
+    "group": "전공심화",
+    "searchAliases": ["연극", "뮤과", "뮤지컬", "방연", "방송영화"],
+    "URL": "https://www.dima.ac.kr/?p=73"
+  },
+  "실용음악학과": {
+    "departmentID": "ADVANCED_APPLIED_MUSIC",
+    "group": "전공심화",
+    "searchAliases": ["기악", "보컬", "작곡"],
+    "URL": "https://www.dima.ac.kr/?p=72"
+  },
+  "방송콘텐츠제작학과": {
+    "departmentID": "ADVANCED_BROADCAST_CONTENT_PRODUCTION",
+    "group": "전공심화",
+    "URL": "https://www.dima.ac.kr/?p=215"
+  },
+  "음향제작학과": {
+    "departmentID": "ADVANCED_AUDIO_PRODUCTION",
+    "group": "전공심화",
+    "searchAliases": ["음제"],
+    "URL": "https://www.dima.ac.kr/?p=75"
+  },
+  "K-POP학과": {
+    "departmentID": "ADVANCED_KPOP",
+    "group": "전공심화",
+    "URL": "https://www.dima.ac.kr/?p=76"
+  },
+  "문화예술마케팅학과": {
+    "departmentID": "ADVANCED_CULTURE_ARTS_MARKETING",
+    "group": "전공심화",
+    "searchAliases": ["엔경", "엔터", "광고과", "광고", "광크"],
+    "URL": "https://www.dima.ac.kr/?p=77"
+  },
+  "방송기술자유전공과": {
+    "departmentID": "BROADCAST_TECHNOLOGY_FREE_MAJOR",
+    "group": "자유전공",
+    "searchAliases": ["방기", "방자", "방송기술", "방자과"],
+    "URL": "https://www.dima.ac.kr/?p=233"
+  },
+  "콘텐츠창작자유전공과": {
+    "departmentID": "CONTENT_CREATION_FREE_MAJOR",
+    "group": "자유전공",
+    "searchAliases": ["콘창과", "콘창자", "콘창"],
+    "URL": "https://www.dima.ac.kr/?p=234"
+  },
+  "글로벌K-뮤직콘텐츠과": {
+    "departmentID": "GLOBAL_K_MUSIC_CONTENT",
+    "group": "자유전공",
+    "searchAliases": ["글로벌", "글로벌과", "글케뮤", "글K-뮤콘", "글케뮤콘과", "글케뮤콘", "케이뮤직과", "케뮤과"],
+    "URL": "https://www.dima.ac.kr/?p=235"
+  }
 }
