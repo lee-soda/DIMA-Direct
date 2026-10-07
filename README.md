@@ -1,4 +1,4 @@
-# DIMA Direct 3.0
+# DIMA Direct 란?
 
 동아방송예술대학교 학생이 자주 사용하는 학사 서비스와 캠퍼스 교통 정보를 빠르게 확인하는 Chromium 확장 프로그램입니다.
 
@@ -15,13 +15,11 @@
 
 무인 프린트와 전자출결 기능은 포함하지 않습니다. 학사일정 섹터는 기본적으로 숨김 처리되어 있으며 설정에서 표시 여부를 선택할 수 있습니다.
 
-## 3.0 화면
+## 실행 화면
 
 ![DIMA Direct 3.0 메인 화면](store-assets/3.0.0/Dima-Direct%20SHOW%2001.png)
 
 ![DIMA Direct 3.0 설정 화면](store-assets/3.0.0/Dima-Direct%20SHOW%2003.png)
-
-Chrome 웹 스토어용 전체 이미지와 프로모션 타일은 [`store-assets/3.0.0`](store-assets/3.0.0)에 있습니다.
 
 ## 권한과 개인정보
 
@@ -33,17 +31,6 @@ GBIS 서비스 키는 확장 프로그램에 포함하지 않고 Cloudflare Work
 ## 개인정보처리방침
 
 [DIMA Direct 개인정보처리방침](privacy.html)
-
-## 배포 패키지
-
-확장 프로그램 패키지에는 다음 항목만 포함합니다.
-
-- `manifest.json`
-- `assets/`
-- `css/`
-- `data/`
-- `js/`
-- `pages/`
 
 ## 출처
 
