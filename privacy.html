@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIMA Direct 개인정보처리방침</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    body { max-width: 860px; margin: 0 auto; padding: 40px 24px 72px; }
+    h1, h2 { font-weight: 600; line-height: 1.3; }
+    h1 { margin-bottom: 8px; }
+    h2 { margin-top: 36px; }
+    .updated { color: #777; }
+    code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>DIMA Direct 개인정보처리방침</h1>
+    <p class="updated">최종 수정일: 2026년 10월 7일</p>
+
+    <p>DIMA Direct는 동아방송예술대학교 학생이 학교 서비스 바로가기와 캠퍼스 교통 정보를 편리하게 확인할 수 있도록 제공되는 브라우저 확장 프로그램입니다. 본 방침은 확장 프로그램이 처리하는 정보와 그 이용 목적을 설명합니다.</p>
+
+    <h2>1. 확장 프로그램에 저장되는 설정</h2>
+    <p>DIMA Direct는 테마, 선택 학과, 바로가기 목록과 순서, 바로가기 표시 방식, 메인 화면 구성 및 버스 노선 표시 여부를 <code>chrome.storage.sync</code>에 저장합니다. 해당 설정은 기능 제공과 사용자 환경 복원에만 사용됩니다.</p>
+    <p>Chrome 동기화가 활성화된 경우 설정값은 사용자의 Google 계정을 통해 동기화될 수 있습니다. 개발자는 이 설정값을 별도의 서버로 전송하거나 열람하지 않습니다.</p>
+
+    <h2>2. 실시간 버스 정보 조회</h2>
+    <p>실시간 버스 정보를 표시하기 위해 확장 프로그램은 지정된 HTTPS 경유 서버에 버스 도착정보를 요청합니다. 요청에는 이름, 학번, 이메일 주소, 계정 정보, GPS 좌표, 방문 기록 또는 확장 프로그램 설정값이 포함되지 않습니다.</p>
+    <p>인터넷 통신 과정에서 서비스 제공업체인 Cloudflare는 요청 처리를 위해 IP 주소, 요청 시각, 요청 URL, 응답 상태 및 오류 정보와 같은 기술적 네트워크 메타데이터를 처리할 수 있습니다. 이 정보는 서비스 제공, 보안, 장애 진단 및 안정성 확인 목적으로만 제한적으로 사용되며 광고, 사용자 추적 또는 개인 프로필 작성에 사용되지 않습니다.</p>
+
+    <h2>3. 수집하지 않는 정보</h2>
+    <p>DIMA Direct는 이름, 주소, 이메일 주소, 학번, 비밀번호, 인증 쿠키, 금융정보, 건강정보, 개인 통신, 웹 방문 기록, 웹사이트 콘텐츠, 키 입력, 마우스 위치 및 정확한 GPS 위치를 수집하지 않습니다.</p>
+
+    <h2>4. 정보의 공유 및 판매</h2>
+    <p>개발자는 사용자 데이터를 판매하지 않습니다. 실시간 버스 정보 제공에 필요한 네트워크 처리 목적 외에는 사용자 정보를 제3자에게 전송하지 않습니다. Cloudflare는 경유 서버의 인프라 제공업체로서 자체 개인정보 보호정책과 보안 기준에 따라 기술적 요청 정보를 처리할 수 있습니다.</p>
+
+    <h2>5. 보관 및 삭제</h2>
+    <p>확장 프로그램 설정은 사용자의 Chrome 저장소에 보관됩니다. 사용자는 설정 초기화, 확장 프로그램 삭제 또는 Chrome 동기화 데이터 관리를 통해 해당 설정을 삭제할 수 있습니다. 경유 서버의 기술적 로그는 서비스 제공업체의 보관 설정에 따라 제한된 기간 동안 보관된 후 삭제됩니다.</p>
+
+    <h2>6. 보안</h2>
+    <p>외부 통신은 HTTPS를 사용합니다. 공공데이터 인증키는 확장 프로그램 패키지에 포함하지 않으며 서버의 비밀값으로 관리합니다. 확장 프로그램은 원격 JavaScript 또는 WebAssembly 코드를 내려받아 실행하지 않습니다.</p>
+
+    <h2>7. Chrome 웹 스토어 제한적 사용 정책</h2>
+    <p>DIMA Direct에서 처리되는 정보는 공개된 전용 목적과 사용자에게 제공되는 기능을 구현하는 데에만 사용됩니다. 사용자 데이터는 맞춤형 광고, 신용도 판단, 대출 또는 확장 프로그램의 목적과 관련 없는 용도로 사용하거나 전송하지 않습니다.</p>
+
+    <h2>8. 방침 변경 및 문의</h2>
+    <p>기능 또는 정보 처리 방식이 변경되는 경우 본 방침의 내용과 최종 수정일을 갱신합니다. 개인정보 관련 문의는 <a href="https://github.com/lee-soda/DIMA-Direct/issues">GitHub Issues</a>를 통해 접수할 수 있습니다.</p>
+  </main>
+</body>
+</html>

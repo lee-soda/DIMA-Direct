@@ -28,7 +28,11 @@ Chrome 웹 스토어용 전체 이미지와 프로모션 타일은 [`store-asset
 - `storage`: 테마, 학과, 바로가기와 메인 화면 설정 저장
 - `https://dima-direct-bus-proxy.dhflyfree03.workers.dev/*`: 공개 버스 도착정보 조회
 
-GBIS 서비스 키는 확장 프로그램에 포함하지 않고 Cloudflare Worker Secret으로만 보관합니다. 사용자 계정, 학번, 비밀번호와 위치정보는 수집하거나 서버로 전송하지 않습니다.
+GBIS 서비스 키는 확장 프로그램에 포함하지 않고 Cloudflare Worker Secret으로만 보관합니다. 사용자 계정, 학번, 비밀번호 및 GPS 위치는 수집하지 않습니다. 실시간 버스 조회 과정에서 Cloudflare가 IP 주소와 요청 메타데이터를 처리할 수 있으며 자세한 내용은 개인정보처리방침에 공개합니다.
+
+## 개인정보처리방침
+
+[DIMA Direct 개인정보처리방침](privacy.html)
 
 ## 배포 패키지
 
